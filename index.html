@@ -52,7 +52,32 @@
                 <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">documentação da MDN</a>.   
             </p>
         </section>
-    </main>
+        <section>
+            <h2>Fale Comigo</h2>
+            <form>
+                <fieldset>
+                    <legend>Formulário de Contato</legend>
+
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" placeholder="Ex: 83999999999">
+
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="16" max="100">
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+        </main>
     <footer>
         <p>Entre em contato: <a href="mailto:yanandradepf@gmail.com">yanandradepf@gmail.com</a></p>
     </footer>
